@@ -14,8 +14,28 @@ const GameDetailPage = () => {
   const [screenshots, setScreenshots] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Selected Game details
   useEffect(() => {
+    // screenshots for selected game
+    fetch(
+      `https://api.rawg.io/api/games/${params.id}/screenshots?key=abcea975c5f046518a4ebd14ccb949d0&platforms=${PlatformID}`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setScreenshots(data.results);
+      })
+      .catch((error) => console.log(error));
+
+    // Similar games to selected game
+    fetch(
+      `https://api.rawg.io/api/games/${params.id}/game-series?key=abcea975c5f046518a4ebd14ccb949d0`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setSimilarGames(data.results.filter((game) => game.id != params.id));
+      })
+      .catch((error) => console.log(error));
+
+    // Selected Game details
     fetch(
       `https://api.rawg.io/api/games/${params.id}?key=abcea975c5f046518a4ebd14ccb949d0`
     )
@@ -27,31 +47,7 @@ const GameDetailPage = () => {
         setLoading(false);
       })
       .catch((error) => console.log(error));
-  }, [params.id]);
-
-  // Similar games to selected game
-  useEffect(() => {
-    fetch(
-      `https://api.rawg.io/api/games/${params.id}/game-series?key=abcea975c5f046518a4ebd14ccb949d0`
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        setSimilarGames(data.results.filter((game) => game.id != params.id));
-      })
-      .catch((error) => console.log(error));
-  }, [genres, id]);
-
-  // screenshots for selected game
-  useEffect(() => {
-    fetch(
-      `https://api.rawg.io/api/games/${params.id}/screenshots?key=abcea975c5f046518a4ebd14ccb949d0&platforms=${PlatformID}`
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        setScreenshots(data.results);
-      })
-      .catch((error) => console.log(error));
-  }, [params.id]);
+  }, [params.id, id, genres]);
 
   return (
     <>

@@ -16,7 +16,7 @@ const ConsoleDetailPage = () => {
   const platformImage = retroPlatforms.find(
     (platform) => platform.id === Number(params.id)
   ).src;
-  const imgUrl = "/src/Consoles/Images/";
+  const imgUrl = "/assets/";
 
   useEffect(() => {
     setId(params.id);

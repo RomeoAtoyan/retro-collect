@@ -12,7 +12,7 @@ const AboutGame = ({ game, similarGames, screenshots }) => {
   const publishers = game?.publishers;
   const starRating = Math.round(game?.rating);
   const availablePlatforms = game?.platforms.map((item) => item.platform);
-  const descriptionHeight = expanded ? "max-content" : "8em";
+  const descriptionHeight = expanded ? "max-content" : "4em";
 
   useEffect(() => {
     console.log(availablePlatforms);
