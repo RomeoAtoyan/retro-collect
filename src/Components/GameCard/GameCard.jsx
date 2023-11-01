@@ -7,8 +7,10 @@ const GameCard = ({ console, game, img, gameOnClick, year }) => {
         <img onClick={gameOnClick} src={img} alt="game-cover" />
       </div>
       <div className={styles.card__description}>
-        <span>{console}</span>
-        <h3>{game}</h3>
+        <div>
+          <span>{console}</span>
+          <h3>{game}</h3>
+        </div>
         {year && <span>{year}</span>}
       </div>
     </div>
@@ -16,3 +18,4 @@ const GameCard = ({ console, game, img, gameOnClick, year }) => {
 };
 
 export default GameCard;
+
