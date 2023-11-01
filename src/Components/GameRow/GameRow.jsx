@@ -42,7 +42,7 @@ const GameRow = ({
           modules={doNotPaginate ? [] : [Pagination, Autoplay]}
           pagination={doNotPaginate ? {} : { clickable: true }}
           spaceBetween={30}
-          slidesPerView={4}
+          slidesPerView={3}
           autoplay={{ delay: 3000 }}
         >
           {games?.map((game, index) => (
