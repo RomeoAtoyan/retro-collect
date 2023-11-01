@@ -1,5 +1,6 @@
 import styles from "./Dreamcast.module.scss";
 import Spiral from "./Images/spiral.png";
+
 const Dreamcast = () => {
   return (
     <div className={styles.cover__container}>

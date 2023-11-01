@@ -6,7 +6,7 @@ import PlayStation from "../../Components/GameCovers/PS1/PS1";
 import PlayStation2 from "../../Components/GameCovers/PS2/PS2";
 import Atari from "../../Components/GameCovers/Atari2600/Atari";
 import NeoGeo from "../../Components/GameCovers/NeoGeo/NeoGeo";
-import Dreamcast from "../../Components/GameCovers/DreamCast/Dreamcast";
+import Dreamcast from "../../Components/GameCovers/Dreamcast/Dreamcast";
 import platformsGIF from "./Images/platforms.gif";
 import GoBackButton from "../../Components/GoBackButton/GoBackButton.jsx";
 import styles from "./AllPlatforms.module.scss";
