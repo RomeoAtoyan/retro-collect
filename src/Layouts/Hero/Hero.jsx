@@ -10,7 +10,7 @@ import { retroPlatforms } from "../../Consoles/retroPlatforms";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
-  const imgUrl = "/src/Consoles/Images/";
+  const imgUrl = "/assets/";
   const navigate = useNavigate();
 
   const GoToConsolePage = (id) => {
