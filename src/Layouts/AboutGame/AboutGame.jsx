@@ -14,10 +14,6 @@ const AboutGame = ({ game, similarGames, screenshots }) => {
   const availablePlatforms = game?.platforms.map((item) => item.platform);
   const descriptionHeight = expanded ? "max-content" : "4em";
 
-  useEffect(() => {
-    console.log(availablePlatforms);
-  }, [availablePlatforms]);
-
   return (
     <>
       <div

@@ -43,7 +43,6 @@ const GameDetailPage = () => {
       .then((data) => {
         setGame(data);
         setGenres(data.genres.map((genre) => genre?.id).join(","));
-        console.log(data);
         setLoading(false);
       })
       .catch((error) => console.log(error));
