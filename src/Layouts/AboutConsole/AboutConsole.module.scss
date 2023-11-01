@@ -1,0 +1,23 @@
+.about__container {
+  .description {
+    padding: var(--paddingContainer);
+
+    p {
+      margin-top: 1em;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      img {
+        width: 70px;
+      }
+    }
+  }
+
+  .console__img {
+    display: flex;
+    justify-content: center;
+  }
+}

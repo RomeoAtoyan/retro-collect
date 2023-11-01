@@ -1,0 +1,52 @@
+.screenshots_container {
+  position: relative;
+  height: 15vh;
+  padding: var(--paddingContainer);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+
+  img {
+    width: 8em;
+    height: 5em;
+    object-fit: cover;
+  }
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.836);
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal_inner {
+    position: relative;
+
+    img {
+      width: 20em;
+      object-fit: contain;
+    }
+
+    svg {
+      position: absolute;
+      top: -3%;
+      right: -3%;
+      color: red;
+      font-size: 1.5em;
+      background-color: black;
+      border-radius: 50%;
+    }
+  }
+}
+
+.modalOpen {
+  overflow: hidden;
+  height: 100vh;
+}

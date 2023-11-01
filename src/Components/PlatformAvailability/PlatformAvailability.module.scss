@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  padding: var(--paddingContainer);
+  position: relative;
+}

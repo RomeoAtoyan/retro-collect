@@ -1,0 +1,22 @@
+.slide {
+  padding: var(--paddingContainer);
+  position: relative;
+
+  .console__name {
+    text-transform: uppercase;
+  }
+
+  .console__img__container {
+    padding-top: 1em;
+    width: 70px;
+    height: 70px;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.swiper-pagination-bullets {
+  .swiper-pagination-bullet {
+    border-radius: 0;
+    background-color: white;
+  }
+
+  .swiper-pagination-bullet-active {
+    border-radius: 0;
+    background-color: white;
+  }
+}
+
+.game__row__swiper {
+  color: white;
+  height: 25vh;
+  .swiper-pagination-bullets {
+    .swiper-pagination-bullet {
+      background-color: black;
+    }
+  }
+}
+
+.platforms {
+  // margin-top: 1em;
+  background-color: black;
+  color: white;
+  padding: var(--paddingContainer);
+
+  .swiper-slide {
+    background-color: rgb(22, 22, 22);
+    text-align: center;
+  }
+}

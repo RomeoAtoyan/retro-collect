@@ -1,0 +1,34 @@
+.cover__container {
+  width: 10em;
+  height: 13em;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scale: 0.5;
+
+  .cover__details {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    line-height: 1.5em;
+    width: 80%;
+    margin-inline: auto;
+
+    span:first-child {
+      font-size: 1.5em;
+    }
+
+    h6 {
+      font-size: 2em;
+      color: orange;
+    }
+  }
+
+  .cover__img {
+    height: 7em;
+    background-position: center;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,33 @@
+.cover__container {
+  width: 10em;
+  height: 15em;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  scale: 0.5;
+
+  .cover__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+    padding: 0 0.2em;
+
+    h2 {
+      font-size: 1.2em;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    .psLogo {
+      width: 1.5em;
+      object-fit: contain;
+    }
+  }
+
+  .cover__img {
+    height: 100%;
+    background-size: cover;
+  }
+}

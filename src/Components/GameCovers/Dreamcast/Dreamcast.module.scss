@@ -1,0 +1,32 @@
+.cover__container {
+  width: 10em;
+  height: 10em;
+  display: flex;
+  scale: 0.5;
+
+  .cover__details {
+    flex: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: black;
+
+    h2 {
+      font-size: 1.5em;
+      writing-mode: vertical-lr;
+      rotate: 180deg;
+      color: white;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+
+  .cover__img {
+    flex: 0.8;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,20 @@
+.spinner_console {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner_game {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full__page__spinner {
+  height: calc(100vh - 8vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

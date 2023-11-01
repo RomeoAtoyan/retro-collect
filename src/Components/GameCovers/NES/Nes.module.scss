@@ -1,0 +1,30 @@
+.cover__container {
+  width: 10em;
+  height: 8em;
+  position: relative;
+  background-color: grey;
+  display: flex;
+  scale: 0.5;
+
+  .left__side {
+    flex: 0.4;
+  }
+
+  .right__side {
+    flex: 0.6;
+    img {
+      width: 75px;
+      height: 95px;
+      object-fit: cover;
+    }
+  }
+
+  .cover__bottom {
+    position: absolute;
+    background-color: grey;
+    height: 40px;
+    width: 80%;
+    bottom: -10%;
+    left: 10%;
+  }
+}

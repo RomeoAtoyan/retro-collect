@@ -1,0 +1,26 @@
+nav {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.123);
+  padding: var(--paddingContainer);
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav__items__left {
+    h3 {
+      line-height: 0.9em;
+      font-size: 1.5em;
+    }
+  }
+
+  .nav__items__right {
+    display: flex;
+    gap: 0.7em;
+  }
+}

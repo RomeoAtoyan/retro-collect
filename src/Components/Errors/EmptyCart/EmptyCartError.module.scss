@@ -1,0 +1,21 @@
+.error__container {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .error__message {
+    margin-top: 1.5em;
+  }
+
+  .start__shopping {
+    padding: 0.5em 1.5em;
+    font-size: .7em;
+  }
+
+  img {
+    width: 10em;
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "PSX";
+  src: url("../../../assets/Fonts/playstation/zrnic___.ttf");
+}
+
+.cover__container {
+  width: 10em;
+  height: 10em;
+  display: flex;
+  scale: 0.5;
+
+  .cover__details {
+    width: 10%;
+    background-color: black;
+    overflow: hidden;
+    font-family: "PSX";
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      writing-mode: vertical-lr;
+      rotate: 180deg;
+      font-size: 1.7em;
+      font-weight: 500;
+      color: white;
+    }
+
+    .PSX {
+      width: 25px;
+      height: 25px;
+      object-fit: cover;
+    }
+
+    .RatedE {
+      height: 25px;
+      object-fit: contain;
+    }
+  }
+
+  .cover__img {
+    width: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

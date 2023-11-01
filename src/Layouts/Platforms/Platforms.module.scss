@@ -1,0 +1,33 @@
+.platforms__container {
+  font-family: "Press Start 2P";
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  gap: 1.5em;
+  width: 100%;
+  padding: var(--paddingContainer);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.123);
+
+  .platforms__carousel {
+    display: flex;
+    gap: 1.5em;
+    animation: scroll 100s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  h5 {
+    min-width: max-content;
+  }
+}

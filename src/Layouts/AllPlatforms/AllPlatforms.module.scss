@@ -1,0 +1,50 @@
+.hero__container {
+  padding: var(--paddingContainer);
+  position: relative;
+  height: 40vh;
+  background-color: orange;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  h2 {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 0.25em 1em;
+    bottom: -5%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+  padding: 5em 0;
+  z-index: 998;
+
+  .item {
+    z-index: 998;
+    position: relative;
+    height: 14em;
+    width: 10em;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px black;
+
+    h4 {
+      background-color: white;
+      padding: 0.25em 0.5em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-right: 3px solid black;
+      border-bottom: 3px solid black;
+    }
+  }
+}

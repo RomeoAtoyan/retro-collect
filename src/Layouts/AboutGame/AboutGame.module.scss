@@ -1,0 +1,58 @@
+.about__container {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--paddingContainer);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .goBack {
+    position: absolute;
+    top: 5%;
+  }
+
+  .year {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 0 0.5em;
+    font-size: 1em;
+  }
+
+  .title__container {
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+
+    h2 {
+      font-size: 1.2em;
+    }
+
+    span {
+      font-size: 1em;
+    }
+  }
+
+  .game__publishers {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2em;
+  }
+}
+
+.genre__container {
+  padding: var(--paddingContainer);
+  display: flex;
+  justify-content: flex-start;
+  gap: 2em;
+  p {
+    font-size: 1.2em;
+    background-color: black;
+    color: white;
+    padding: 0.25em 0.5em;
+  }
+}
