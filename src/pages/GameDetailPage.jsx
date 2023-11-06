@@ -11,13 +11,14 @@ const GameDetailPage = () => {
   const [game, setGame] = useState({});
   const [genres, setGenres] = useState("");
   const [similarGames, setSimilarGames] = useState([]);
+  const [highRatedGames, setHighRatedGames] = useState([]);
   const [screenshots, setScreenshots] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // screenshots for selected game
     fetch(
-      `https://api.rawg.io/api/games/${params.id}/screenshots?key=abcea975c5f046518a4ebd14ccb949d0&platforms=${PlatformID}`
+      `https://api.rawg.io/api/games/${params.id}/screenshots?key=abcea975c5f046518a4ebd14ccb949d0&platforms=${id}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -46,6 +47,17 @@ const GameDetailPage = () => {
         setLoading(false);
       })
       .catch((error) => console.log(error));
+
+    // highest rated games of the same console
+    fetch(
+      `https://api.rawg.io/api/games?key=abcea975c5f046518a4ebd14ccb949d0&platforms=${id}&page=1&ordering=-rating&genres=${genres}`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setHighRatedGames(data.results);
+        console.log(data.results);
+      })
+      .catch((error) => console.log(error));
   }, [params.id, id, genres]);
 
   return (
@@ -59,6 +71,7 @@ const GameDetailPage = () => {
           game={game}
           screenshots={screenshots}
           similarGames={similarGames}
+          highRatedGames={highRatedGames}
         />
       )}
     </>

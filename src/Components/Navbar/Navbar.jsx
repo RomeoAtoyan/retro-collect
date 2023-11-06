@@ -24,7 +24,9 @@ const Navbar = () => {
       <div className={styles.nav__items__right}>
         <GrSearch onClick={() => setShowInput(!showInput)} />
         <MdFavoriteBorder />
-        <BsHandbag />
+        <Link to="/cart">
+          <BsHandbag />
+        </Link>
         {/* if contemplating burger menu
         <RxHamburgerMenu/> */}
       </div>

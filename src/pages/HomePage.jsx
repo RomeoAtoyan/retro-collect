@@ -1,3 +1,4 @@
+import GameRow from "../Components/GameRow/GameRow";
 import Hero from "../Layouts/Hero/Hero";
 import Platforms from "../Layouts/Platforms/Platforms";
 
@@ -6,6 +7,7 @@ const HomePage = () => {
     <>
       <Platforms />
       <Hero />
+      <GameRow category={"Best Games"} />
     </>
   );
 };
