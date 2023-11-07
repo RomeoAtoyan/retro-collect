@@ -16,7 +16,7 @@ const AboutConsole = ({
 }) => {
   return detailsLoading ? (
     <div className="spinner_console">
-      <PacmanLoader color="black" />
+      <PacmanLoader color="orange" />
     </div>
   ) : (
     <div className={styles.about__container}>

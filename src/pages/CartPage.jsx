@@ -1,11 +1,11 @@
-import CartError from "../Components/Errors/EmptyCart/EmptyCartError"
+import CartError from "../Components/Errors/EmptyCart/EmptyCartError";
 
 const CartPage = () => {
   return (
     <>
-    <CartError/>
+      <CartError />
     </>
-  )
-}
+  );
+};
 
-export default CartPage
+export default CartPage;

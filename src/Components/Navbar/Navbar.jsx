@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./Navbar.module.scss";
-import { GrSearch } from "react-icons/gr";
+import { AiOutlineSearch } from "react-icons/ai";
 import { MdFavoriteBorder } from "react-icons/md";
 import { BsHandbag } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -22,10 +22,10 @@ const Navbar = () => {
       </Link>
       <SearchInput showInput={showInput} />
       <div className={styles.nav__items__right}>
-        <GrSearch onClick={() => setShowInput(!showInput)} />
+        <AiOutlineSearch onClick={() => setShowInput(!showInput)} />
         <MdFavoriteBorder />
         <Link to="/cart">
-          <BsHandbag />
+          <BsHandbag color="white" />
         </Link>
         {/* if contemplating burger menu
         <RxHamburgerMenu/> */}

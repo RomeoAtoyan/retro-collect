@@ -6,9 +6,10 @@ nav {
   align-items: center;
   border-bottom: 1px solid rgba(128, 128, 128, 0.123);
   padding: var(--paddingContainer);
+  color: white;
 
   a {
-    color: black;
+    color: white;
     text-decoration: none;
   }
 
@@ -22,5 +23,6 @@ nav {
   .nav__items__right {
     display: flex;
     gap: 0.7em;
+    color: white;
   }
 }

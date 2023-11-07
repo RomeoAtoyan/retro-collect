@@ -64,7 +64,7 @@ const GameDetailPage = () => {
     <>
       {loading ? (
         <div className="full__page__spinner">
-          <PacmanLoader color="black" />
+          <PacmanLoader color="orange" />
         </div>
       ) : (
         <AboutGame

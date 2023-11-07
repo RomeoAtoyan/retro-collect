@@ -58,10 +58,12 @@ const ConsoleDetailPage = () => {
       return;
     } else {
       setPage((prevPage) => prevPage - 1);
+      setGamesLoading(true);
     }
   };
 
   const nextPage = () => {
+    setGamesLoading(true);
     setPage((prevPage) => prevPage + 1);
   };
 

@@ -28,7 +28,7 @@ const GameRow = ({
 
   return gamesLoading ? (
     <div className="spinner_game">
-      <PacmanLoader color="black" />
+      <PacmanLoader color="orange" />
     </div>
   ) : (
     <div className={styles.row__container}>

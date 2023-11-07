@@ -53,12 +53,14 @@ const AboutGame = ({ game, similarGames, highRatedGames, screenshots }) => {
         games={highRatedGames}
         category={`Highest Rated`}
       />
-      <GameRow
-        setExpanded={setExpanded}
-        doNotPaginate
-        games={similarGames}
-        category={"Similar Games"}
-      />
+      {similarGames && (
+        <GameRow
+          setExpanded={setExpanded}
+          doNotPaginate
+          games={similarGames}
+          category={"Similar Games"}
+        />
+      )}
     </>
   );
 };
